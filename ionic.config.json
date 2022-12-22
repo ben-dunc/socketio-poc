@@ -1,0 +1,7 @@
+{
+  "name": "socketio-poc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
