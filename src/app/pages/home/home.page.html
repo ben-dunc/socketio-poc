@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Socket IO - POC
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="container">
+    <ion-title>Enter Room Code</ion-title>
+    <ion-row class="text-container">
+      <textarea class="ion-margin" maxlength="4" wrap="off" autofocus placeholder="CODE" [(ngModel)]="roomCode"></textarea>
+      <ion-button [disabled]="roomCode.length !== 4" (click)="connectToRoom(roomCode)">Go</ion-button>
+    </ion-row>
+    <!-- <ion-text>or</ion-text>
+    <ion-button (click)="makeRoom()" color="light">
+      <ion-text color="primary">New room</ion-text>
+    </ion-button> -->
+  </ion-grid>
+</ion-content>

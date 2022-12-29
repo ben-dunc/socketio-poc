@@ -1,0 +1,32 @@
+@import './../../../theme/variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 25%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  ion-button {
+    height: 26px;
+    width: 26px;
+  }
+}
+
+textarea {
+  width: 150px;
+  background: #1f1f1f;
+  height: 26px !important;
+  resize: none;
+  border: none;
+  border-radius: 5px;
+}

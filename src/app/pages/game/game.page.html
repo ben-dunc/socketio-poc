@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ roomCode.toUpperCase() }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="exitRoom()">
+        <ion-icon size="large" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content #content>
+  <ion-icon *ngFor="let pos of playerService.playerPositions" size="large" style="position: absolute" [ngStyle]="{'left': (pos.x + 'px'), 'top': (pos.y + 'px')}" name="caret-up-outline"></ion-icon>
+  <ion-icon color="primary" size="large" style="position: absolute" [ngStyle]="{'left': (mouse.x + 'px'), 'top': (mouse.y + 'px')}" name="caret-up-outline"></ion-icon>
+</ion-content>
